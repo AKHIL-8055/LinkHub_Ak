@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
-import MyGroups from "./Components/mygroups";
+import MyGroups from "./Components/MyGroups";
 import Groups from "./Components/Groups";
 import AddGroup from "./Components/AddGroup";
 import Login from "./Components/Login";
-import Logout from "./Components/logout";
+import Logout from "./Components/Logout";
 import TermsAndPrivacy from "./Components/TermsAndPrivacy";
 import About from "./Components/About";
 
