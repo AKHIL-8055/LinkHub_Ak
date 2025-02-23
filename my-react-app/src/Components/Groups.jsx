@@ -21,10 +21,11 @@ const Groups = () => {
         params.append("page", page);
         params.append("size", 20); // 20 items per page
 
-        const response = await fetch(`http://ec2-3-108-64-248.ap-south-1.compute.amazonaws.com:8080/groups?${params.toString()}`, {
+        const response = await fetch(`/api/groups?${params.toString()}`, {
           method: "GET",
           credentials: "include", // If authentication is needed
         });
+
 
         const data = await response.json();
         setGroups(data.content); // Extracting content array
