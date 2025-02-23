@@ -9,7 +9,7 @@ const Groups = () => {
   const [page, setPage] = useState(0); // Current page
   const [totalPages, setTotalPages] = useState(1); // Total number of pages
 
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
 
   useEffect(() => {
