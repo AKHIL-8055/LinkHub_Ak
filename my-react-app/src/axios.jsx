@@ -1,7 +1,10 @@
+
+
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "/api/", // Use relative path to allow Vercel to rewrite requests
+  baseURL: "/api", 
+  withCredentials: true, 
 });
 
 export default API;
