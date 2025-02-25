@@ -8,7 +8,8 @@ const Logout = () => {
   useEffect(() => {
     const handleLogout = async () => {
       try {
-        await axios.post("http://ec2-3-108-64-248.ap-south-1.compute.amazonaws.com:8080/logout", {}, { withCredentials: true });
+        await axios.post("https://linkhub-back-ak.onrender.com/logout", {}, { withCredentials: true });
+
         alert("Logout successful!");
         navigate("/");
       } catch (error) {
