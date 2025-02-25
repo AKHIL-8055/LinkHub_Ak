@@ -38,7 +38,7 @@ const AddGroup = () => {
 
     setError("");
 
-    fetch("http://ec2-3-108-64-248.ap-south-1.compute.amazonaws.com:8080/addgroup", {
+    fetch("https://linkhub-back-ak.onrender.com/addgroup", {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
