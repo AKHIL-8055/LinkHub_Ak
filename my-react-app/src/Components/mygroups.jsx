@@ -44,7 +44,7 @@ const MyGroups = () => {
       return;
     }
 
-    fetch(`http://localhost:8080/updategroup/${editingGroup}`, {
+    fetch(`https://linkhub-back-ak.onrender.com/updategroup/${editingGroup}`, {
       method: "PUT",
       credentials: "include",
       headers: { "Content-Type": "application/json" },
@@ -60,7 +60,7 @@ const MyGroups = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://ec2-3-108-64-248.ap-south-1.compute.amazonaws.com:8080/deletegroup/${id}`, {
+    fetch(`https://linkhub-back-ak.onrender.com/deletegroup/${id}`, {
       method: "DELETE",
       credentials: "include",
     })
