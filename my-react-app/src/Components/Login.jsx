@@ -23,7 +23,8 @@ const Login = () => {
             return;
         }
         // window.location.href = "http://localhost:8080/oauth2/authorization/google";
-        window.location.href = "http://ec2-3-108-64-248.ap-south-1.compute.amazonaws.com:8080/oauth2/authorization/google";
+        window.location.href = "https://linkhub-back-ak.onrender.com/oauth2/authorization/google";
+
     };
 
     return (
