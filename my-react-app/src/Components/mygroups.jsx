@@ -9,8 +9,9 @@ const MyGroups = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    fetch("http://ec2-13-233-37-8.ap-south-1.compute.amazonaws.com:8080/mygroups", {
+
+    useEffect(() => {
+    fetch("https://linkhub-back-ak.onrender.com/mygroups", {
       method: "GET",
       credentials: "include",
     })
@@ -18,6 +19,7 @@ const MyGroups = () => {
       .then((data) => setGroups(data))
       .catch((error) => console.error("Error fetching groups:", error));
   }, []);
+
 
   const handleEdit = (group) => {
     setEditingGroup(group.id);
