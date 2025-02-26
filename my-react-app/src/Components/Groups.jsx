@@ -21,14 +21,11 @@ const Groups = () => {
         params.append("page", page);
         params.append("size", 20); // 20 items per page
 
-        // const response = await fetch(`https://linkhub-back-ak.onrender.com/groups?${params.toString()}`, {
-        //   method: "GET",
-        //   credentials: "include", 
-        // });
         const response = await fetch(`https://linkhub-back-ak.onrender.com/groups?${params.toString()}`, {
           method: "GET",
-          credentials: "include",
+          credentials: "include", 
         });
+
 
 
         const data = await response.json();
