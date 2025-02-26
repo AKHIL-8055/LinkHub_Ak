@@ -27,7 +27,7 @@ const Groups = () => {
         // });
         const response = await fetch(`https://linkhub-back-ak.onrender.com/groups?${params.toString()}`, {
           method: "GET",
-          credentials: "include"
+          credentials: "include",
         });
 
 
